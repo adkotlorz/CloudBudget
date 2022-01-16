@@ -1,0 +1,120 @@
+@import 'variables';
+
+.section__features {
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  height: 660px;
+  width: 100%;
+
+  h2 {
+    color: $pureBlack;
+    font-size: 36px;
+    font-weight: 600;
+    height: 55px;
+    line-height: 43px;
+    margin: 0 auto;
+    max-width: 1110px;
+    padding-top: 63px;
+    text-align: center;
+    top: 20px;
+    right: 9px;
+  }
+
+  .block {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1110px;
+    padding-top: 118px;
+    width: 100%;
+
+    &__item {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 355px;
+      position: relative;
+      top: -55px;
+
+      .block__item--img {
+        height: 250px;
+        max-width: 350px;
+        border-radius: 8px;
+      }
+
+      .block__item--text {
+        align-items: center;
+        background: $pureWhite;
+        border-radius: 8px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, .1);
+        display: flex;
+        flex-direction: column;
+        height: 198px;
+        justify-content: center;
+        position: absolute;
+        width: 293px;
+        top: 210px;
+
+        h3 {
+          color: #101010;
+          font-size: 18px;
+          font-weight: bold;
+          height: 40px;
+          letter-spacing: 0;
+          line-height: 22px;
+          margin-bottom: 20px;
+          text-align: center;
+          width: 229px;
+        }
+
+        p {
+          color: #101010;
+          font-size: 12px;
+          font-weight: 400;
+          height: 57px;
+          letter-spacing: 0;
+          line-height: 18px;
+          padding-bottom: 5px;
+          text-align: center;
+          width: 229px;
+          right: 8px;
+        }
+
+        a {
+          color: $primaryColor;
+          font-size: 12px;
+          font-weight: 700;
+          height: 18px;
+          letter-spacing: 0;
+          line-height: 18px;
+          text-align: center;
+          text-decoration: none;
+          width: 253px;
+          padding-top: 3px;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 1049px) {
+    height: auto;
+    justify-content: space-around;
+    padding: 0 2% 20px;
+
+    .block {
+      .block__item {
+        margin-bottom: 30px;
+        padding: 0 10px;
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
