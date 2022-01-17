@@ -24,6 +24,6 @@ To setup this project, simply clone on your PC whole code (or download zip packa
 
 Type in the terminal "npm install" to install all needed dependencies.
 
-After Node Package Manager done his work, type again in the terminal "npm start". Local server will start on https://localhost:3000
+After Node Package Manager done his work, type again in the terminal "npm start". Local server will start on http://localhost:3000
 
 Enjoy!
